@@ -1,0 +1,22 @@
+{
+  "personnes": [
+    {
+      "nom": "dd44",
+      "prenom": "dd",
+      "age": 1,
+      "poids": 1,
+      "taille": 1,
+      "profil": "dddddd",
+      "id": 1
+    },
+    {
+      "nom": "Conde",
+      "prenom": "Aboubacar Sidiki",
+      "age": 24,
+      "poids": 80,
+      "taille": 1.8,
+      "profil": "je suis un chercheur de l'iset et je suis prêt pour le combat final ",
+      "id": 2
+    }
+  ]
+}

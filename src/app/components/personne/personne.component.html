@@ -1,0 +1,41 @@
+<h1 class="text-primary">Ajouter une personne</h1>
+<form class="form-group" #f=ngForm (ngSubmit)="AddPersonnes()">
+    <div class="form-group row">
+        <div class="col-md-4"><label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" class="form-control" [(ngModel)]="personne.nom" placeholder="Nom" aria-describedby="helpId" required>
+        </div>
+        <div class="col-md-4"> <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom" class="form-control" [(ngModel)]="personne.prenom" placeholder="Prenom" aria-describedby="helpId" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-8"><label for="age">Age</label>
+            <input type="number" name="age" id="age" class="form-control" [(ngModel)]="personne.age" placeholder="Age" aria-describedby="helpId" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-4">
+            <label for="poids">Poids</label>
+            <input type="number" name="poids" id="poids" class="form-control" [(ngModel)]="personne.poids" placeholder="Poids" aria-describedby="helpId" required>
+        </div>
+        <div class="col-md-4">
+            <label for="taille">Taille</label>
+            <input type="number" name="taille" id="taille" class="form-control" [(ngModel)]="personne.taille" placeholder="Taille" aria-describedby="helpId" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-8">
+            <label for="profil">Profil</label>
+            <textarea name="profil" id="profil" class="form-control" rows="3" cols="10" [(ngModel)]="personne.profil" required>
+        </textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn btn-primary" [disabled]="!f.valid">Ajouter</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-secondary" [disabled]="!f.valid" type="reset">Reset</button>
+        </div>
+    </div>
+</form>
